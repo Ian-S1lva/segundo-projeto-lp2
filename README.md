@@ -1,4 +1,5 @@
-## Sobre o programa
+## (ANTIGO - MODIFICAR)
+## Sobre o programa 
 Simulação de atendimento e caixa para uma lanchonete fast-food. Pelo menu principal é possível simular a criação de um pedido, selecionando opções de comidas e seus ingredientes, visualizar os pedidos pendentes, entregar um pedido e acompanhar o saldo do caixa. Cada opção selecionada leva para seu próprio menu, onde o usuário insere um nome ou um número para fazer as ações desejadas. As informações sobre a execução do programa são impressas por via terminal.
 ## Diagrama UML
 ![diagrama UML](img/UML.png)
