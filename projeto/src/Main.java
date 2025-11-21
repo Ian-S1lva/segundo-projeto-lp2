@@ -18,7 +18,7 @@ public class Main {
         =================================================================================================== */
         /**/                                                                                              /**/
         /**/    int rodarTesteCriarProdutos = 1;                                                          /**/
-        /**/    int rodarTesteRemoverProdutos = 0;                                                        /**/
+        /**/    int rodarTesteRemoverProdutos = 1;                                                        /**/
         /**/                                                                                              /**/
         /* ================================================================================================= */
 
@@ -701,8 +701,8 @@ public class Main {
         Caixa caixaTeste = new Caixa();
         ArrayList <Produtos> PedidoTeste = new ArrayList<>();
 
-        PedidoTeste.add(new Hamburguer(1));
-        PedidoTeste.add(new Hamburguer(2));
+        PedidoTeste.add(new HamburguerSimples(1));
+        PedidoTeste.add(new HamburguerSimples(2));
         PedidoTeste.add(new HamburguerDuplo(1));
         PedidoTeste.add(new HamburguerDuplo(2));
         PedidoTeste.add(new HamburguerTriplo());
@@ -746,8 +746,8 @@ public class Main {
         Caixa caixaTeste = new Caixa();
         ArrayList <Produtos> PedidoTeste = new ArrayList<>();
 
-        Hamburguer hamburguer1 = new Hamburguer(1);
-        Hamburguer hamburguer2 = new Hamburguer(2);
+        Hamburguer hamburguer1 = new HamburguerSimples(1);
+        Hamburguer hamburguer2 = new HamburguerSimples(2);
         HamburguerDuplo hamburguerduplo1 = new HamburguerDuplo(1);        
         HamburguerDuplo hamburguerduplo2 = new HamburguerDuplo(2);
         HamburguerTriplo hamburguertriplo = new HamburguerTriplo();
@@ -1001,7 +1001,7 @@ public class Main {
         int opc, opc1;
 
         if (i == 1) {//hamburguer simples de frango
-            Hamburguer hamburguer = new Hamburguer(i);
+            Hamburguer hamburguer = new HamburguerSimples(i);
 
             System.out.print("\n=========================\nDeseja remover algum ingrediente?\n[1] Sim\n[2] Concluir\n[3] Cancelar pedido\n=========================\n");
 
@@ -1062,7 +1062,7 @@ public class Main {
         }
 
         if (i == 2) {//hamburguer simples de carne
-            Hamburguer hamburguer = new Hamburguer(i);
+            Hamburguer hamburguer = new HamburguerSimples(i);
 
             System.out.print("\n=========================\nDeseja remover algum ingrediente?\n[1] Sim\n[2] Concluir\n[3] Cancelar pedido\n=========================\n");
 

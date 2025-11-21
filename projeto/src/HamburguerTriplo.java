@@ -1,18 +1,17 @@
-public class HamburguerTriplo extends Hamburguer implements Produtos{
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class HamburguerTriplo extends Hamburguer{
     HamburguerTriplo(){
         super();
         setPreco(25.00);
-        setIngredientesTriplo();
+        setIngredientes(1); //qualquer valor
         setNome("Hamburguer Triplo\n");
     }
 
     @Override
-    public void exibirNome() {
-        System.out.print(getNome());
+    public void setIngredientes(int i){ //descarta i      
+        Collections.addAll(ingredientes, Ingredientes.values());
     }
 
-    @Override
-    public double getPreco() {
-        return super.getPreco();
-    }
 }

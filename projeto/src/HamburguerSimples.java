@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class HamburguerDuplo extends Hamburguer{
+public class HamburguerSimples extends Hamburguer{
 
-    HamburguerDuplo(int i){
-        super();
+    HamburguerSimples(int i){
+        ingredientes = new ArrayList<>();
         setIngredientes(i);
-        setPreco(23.00);
-        setNome("Hamburguer duplo\n");
+        setPreco(21.50);
+        setNome("Hamburguer Simples\n");
     }
 
     //classe abstrata
@@ -25,10 +25,9 @@ public class HamburguerDuplo extends Hamburguer{
             return;
         }
 
-        addIngrediente(Ingredientes.SALSICHA);
-        addIngrediente(Ingredientes.HAMB2);
         return;
-    }
-
+    }    
     
+    
+
 }
