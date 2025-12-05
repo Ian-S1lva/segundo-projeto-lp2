@@ -1,9 +1,7 @@
 public abstract class BebidaRefrigerante implements Produtos {
     protected double preco;
     protected RefriSabores sabor;
-    protected String nome;
-
-    
+    protected String nome;  
 
     //abstrato
     public abstract void setNome();
